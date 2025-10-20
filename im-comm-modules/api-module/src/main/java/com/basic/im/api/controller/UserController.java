@@ -1916,7 +1916,7 @@ public class UserController extends AbstractController {
     @RequestMapping("/offlineOperation")
     public JSONMessage offlineOperation(@RequestParam(defaultValue = "0") String offlineTime) {
         try {
-            long startTime = new Double(Double.parseDouble(offlineTime)).longValue();
+            long startTime = (long) Double.parseDouble(offlineTime);
             List<OfflineOperation> offlineOperation = userManager.getOfflineOperation(ReqUtil.getUserId(), startTime);
             return JSONMessage.success(offlineOperation);
         } catch (ServiceException e) {
