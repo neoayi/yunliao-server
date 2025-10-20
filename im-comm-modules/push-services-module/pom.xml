@@ -95,9 +95,10 @@
         <!-- VIVO  推送 -->
         <dependency>
             <groupId>com.vivo.push</groupId>
-            <artifactId>vPush-server-sdk</artifactId>
-            <version>2.2</version>
-            <optional>true</optional>
+            <artifactId>vpush-server-sdk</artifactId>
+            <version>3.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../lib/vpush-server-sdk-3.3.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
