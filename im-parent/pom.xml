@@ -32,9 +32,8 @@
         <log4j2.version>2.10.0</log4j2.version>
         <logback.version>1.2.3</logback.version>
         <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
-        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
-
 
     </properties>
 	<dependencyManagement>
@@ -45,8 +44,6 @@
 			    <artifactId>spring-boot-dependencies</artifactId>
 			    <version>${spring-boot.version}</version>
 			</dependency>
-
-
 		</dependencies>
 	</dependencyManagement>
 
@@ -75,13 +72,12 @@
 		 </dependency>-->
 	</dependencies>
 
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.6.0</version>
+				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
