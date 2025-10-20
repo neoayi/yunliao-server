@@ -20,7 +20,7 @@
 		<tomcat.version>8.5.13</tomcat.version>
 		<jstl.version>1.2</jstl.version>
 		<jackson-databind.version>2.9.5</jackson-databind.version>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 		<rocketmq.version>4.3.1</rocketmq.version>
 		<start-class>com.basic.mpserver.MpServerStart</start-class>
 		<!--<main.basedir>${basedir}/../..</main.basedir>

@@ -17,8 +17,8 @@
         <docker.plugin.version>0.4.12</docker.plugin.version>
         <registry.url>192.168.0.13:5000</registry.url>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <lombok.version>1.18.22</lombok.version>
         <yl.version>3.0-SNAPSHOT</yl.version>
         <slf4j.version>1.7.32</slf4j.version>

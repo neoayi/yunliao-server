@@ -18,7 +18,7 @@
     <properties>
         <im-module.vserion>1.0</im-module.vserion>
         <jackson-databind.version>2.9.5</jackson-databind.version>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <start-class>com.basic.push.PushApplication</start-class>
         <main.basedir>${basedir}/../..</main.basedir>
         <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
