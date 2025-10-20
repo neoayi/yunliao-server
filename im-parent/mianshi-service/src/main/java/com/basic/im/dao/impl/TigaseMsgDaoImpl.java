@@ -722,7 +722,7 @@ public class TigaseMsgDaoImpl extends MongoRepository<Object, Integer> implement
                 if (lastMsgObj != null) {
                     Document values = new Document();
                     values.put("messageId", lastMsgObj.get("messageId"));
-                    values.put("timeSend", new Double(lastMsgObj.get("timeSend").toString()).longValue());
+                    values.put("timeSend", ((Number) lastMsgObj.get("timeSend")).longValue());
                     values.put("content", lastMsgObj.get("content"));
                     if (!lastquery.isEmpty()) {
                         lastdbCollection.updateMany(lastquery, new Document(MongoOperator.SET, values));
@@ -1117,7 +1117,7 @@ public class TigaseMsgDaoImpl extends MongoRepository<Object, Integer> implement
                     Document values = new Document();
                     if (lastMsgObj != null) {
                         values.put("messageId", lastMsgObj.get("messageId"));
-                        values.put("timeSend", new Double(lastMsgObj.get("timeSend").toString()).longValue());
+                        values.put("timeSend", ((Number) lastMsgObj.get("timeSend")).longValue());
                         values.put("content", lastMsgObj.get("content"));
                         if (!lastquery.isEmpty()) {
                             lastdbCollection.updateMany(lastquery, new Document(MongoOperator.SET, values));
@@ -2311,7 +2311,7 @@ public class TigaseMsgDaoImpl extends MongoRepository<Object, Integer> implement
             }
             Document values = new Document();
             values.put("messageId", lastMsgObj.get("messageId"));
-            values.put("timeSend", new Double(lastMsgObj.get("timeSend").toString()).longValue());
+            values.put("timeSend", ((Number) lastMsgObj.get("timeSend")).longValue());
             values.put("content", lastMsgObj.get("content"));
             lastdbCollection.updateMany(lastquery, new Document(MongoOperator.SET, values));
             if(1==type&&2==delete&&null!=receiver) {

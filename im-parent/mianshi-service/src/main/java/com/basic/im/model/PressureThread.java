@@ -122,7 +122,7 @@ public class PressureThread implements Runnable{
     private double getTimeSend(long ts) {
         double time = (double) ts;
         DecimalFormat dFormat = new DecimalFormat("#.000");
-        return new Double(dFormat.format(time / 1000));
+        return Double.valueOf(dFormat.format(time / 1000));
     }
 
     public static String getFullString() {
