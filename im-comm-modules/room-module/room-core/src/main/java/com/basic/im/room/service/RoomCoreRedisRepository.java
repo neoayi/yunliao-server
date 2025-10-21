@@ -175,12 +175,6 @@ public class RoomCoreRedisRepository extends AbstractRedisson {
         bucket.expire(KConstants.Expire.DAY7, TimeUnit.SECONDS);
     }
 
-
-
-
-
-
-
     public List<String> queryUserRoomJidList(Integer userId){
         String key = String.format(ROOMJID_LIST,userId);
         RList<String> list = redissonClient.getList(key);

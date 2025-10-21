@@ -96,7 +96,7 @@ public abstract class AbstractRedisson {
      * @throws LockFailException 获取锁失败异常
      * @throws InterruptedException
      */
-    public Object executeOnLock(String lockKey,long time,long timeout,LockCallBack callBack) throws LockFailException,InterruptedException {
+    public Object executeOnLock(String lockKey,long time,long timeout, LockCallBack callBack) throws LockFailException,InterruptedException {
         RLock lock =getLock(lockKey);
         try {
            if(lock.tryLock(time,timeout,TimeUnit.SECONDS)){

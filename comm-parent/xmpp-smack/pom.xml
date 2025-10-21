@@ -15,14 +15,18 @@
     <version>1.0</version>
 
     <properties>
-        <smack.version>4.3.0</smack.version>
+        <!-- 使用与主 POM 一致的版本,支持 Java 8+ -->
+        <smack.version>4.4.7</smack.version>
     </properties>
     <dependencies>
-        <!-- <dependency>
-			<groupId>org.igniterealtime.smack</groupId>
-			<artifactId>smack</artifactId>
-			<version>3.2.1</version>
-		</dependency> -->
+        <!-- Smack Core - Java 8+ 自动包含,通过 smack-tcp 传递依赖 -->
+        
+        <!-- https://mvnrepository.com/artifact/org.igniterealtime.smack/smack-tcp -->
+        <dependency>
+            <groupId>org.igniterealtime.smack</groupId>
+            <artifactId>smack-tcp</artifactId>
+            <version>${smack.version}</version>
+        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.igniterealtime.smack/smack-extensions -->
         <dependency>
@@ -30,26 +34,8 @@
             <artifactId>smack-extensions</artifactId>
             <version>${smack.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.igniterealtime.smack/smack-tcp -->
-        <dependency>
-            <groupId>org.igniterealtime.smack</groupId>
-            <artifactId>smack-tcp</artifactId>
-            <version>${smack.version}</version>
-        </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.igniterealtime.smack/smack-tcp -->
-        <!-- <dependency>
-            <groupId>org.igniterealtime.smack</groupId>
-            <artifactId>smack-tcp</artifactId>
-            <version>4.4.0-alpha1</version>
-        </dependency> -->
-
-        <!-- https://mvnrepository.com/artifact/org.igniterealtime.smack/smack-java7 -->
-        <dependency>
-            <groupId>org.igniterealtime.smack</groupId>
-            <artifactId>smack-java7</artifactId>
-            <version>${smack.version}</version>
-        </dependency>
+        <!-- smack-java7 已移除 - Java 8+ 不需要此依赖 -->
 
     </dependencies>
 
