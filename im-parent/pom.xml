@@ -18,6 +18,8 @@
         <fastjson.version>1.2.83</fastjson.version>
         <guava.version>33.3.1-jre</guava.version>
         <jackson-databind.version>2.18.1</jackson-databind.version>
+        <rocketmq-client.version>5.3.1</rocketmq-client.version>
+        <rocketmq-spring-boot-starter.version>2.3.1</rocketmq-spring-boot-starter.version>
         <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
 		<spring-cloud.version>2.2.0.RELEASE</spring-cloud.version>
 		<spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
@@ -45,6 +47,18 @@
 			    <groupId>org.springframework.boot</groupId>
 			    <artifactId>spring-boot-dependencies</artifactId>
 			    <version>${spring-boot.version}</version>
+			</dependency>
+			
+			<!-- RocketMQ 消息队列 -->
+			<dependency>
+				<groupId>org.apache.rocketmq</groupId>
+				<artifactId>rocketmq-client</artifactId>
+				<version>${rocketmq-client.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.rocketmq</groupId>
+				<artifactId>rocketmq-spring-boot-starter</artifactId>
+				<version>${rocketmq-spring-boot-starter.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

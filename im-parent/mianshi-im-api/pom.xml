@@ -21,7 +21,6 @@
 		<im-module.vserion>1.0</im-module.vserion>
 		<jackson-databind.version>2.9.5</jackson-databind.version>
 		<java.version>11</java.version>
-		<rocketmq.version>4.3.1</rocketmq.version>
 		<start-class>com.basic.mianshi.Application</start-class>
 		<!--<main.basedir>${basedir}/../..</main.basedir>
 		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>-->
