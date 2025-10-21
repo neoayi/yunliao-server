@@ -14,8 +14,10 @@
 		<service.version>socket-2.0</service.version>
         <parent.version>socket-2.0</parent.version>
 		<im-module.vserion>1.0</im-module.vserion>
-        <lombok.version>1.18.32</lombok.version>
-        <fastjson.version>1.2.70</fastjson.version>
+        <lombok.version>1.18.34</lombok.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <guava.version>33.3.1-jre</guava.version>
+        <jackson-databind.version>2.18.1</jackson-databind.version>
         <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
 		<spring-cloud.version>2.2.0.RELEASE</spring-cloud.version>
 		<spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>

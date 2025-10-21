@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>28.1-jre</version>
+            <version>${guava.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.rocketmq</groupId>
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.10.4</version>
+            <version>${jackson-databind.version}</version>
             <scope>compile</scope>
         </dependency>
         <!--java 的HTML解析器-->

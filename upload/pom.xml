@@ -144,7 +144,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.7.16</version>
+            <version>${hutool.version}</version>
         </dependency>
 
         <!--MinIO JAVA SDK-->
