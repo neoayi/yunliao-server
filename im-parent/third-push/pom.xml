@@ -18,7 +18,7 @@
     <properties>
         <im-module.vserion>1.0</im-module.vserion>
         <jackson-databind.version>2.9.5</jackson-databind.version>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
         <start-class>com.basic.push.PushApplication</start-class>
         <main.basedir>${basedir}/../..</main.basedir>
         <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
@@ -127,8 +127,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.6.0</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>8</source>
+                    <target>8</target>
                     <encoding>UTF-8</encoding>
                     <compilerArguments>
                         <extdirs>lib</extdirs>

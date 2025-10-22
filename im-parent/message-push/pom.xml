@@ -20,7 +20,7 @@
         <hutool.version>4.0.10</hutool.version>
         <protobuf.version>3.11.4</protobuf.version>
         <jackson-databind.version>2.9.5</jackson-databind.version>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
         <start-class>com.basic.xmpppush.XmppPushApplication</start-class>
         <main.basedir>${basedir}/../..</main.basedir>
         <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
@@ -157,8 +157,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.6.0</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>8</source>
+                    <target>8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
