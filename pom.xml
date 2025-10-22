@@ -226,6 +226,8 @@
                     <target>${maven.compiler.target}</target>
                     <source>${maven.compiler.source}</source>
                     <encoding>UTF-8</encoding>
+                    <fork>true</fork>
+                    <executable>${java.home}/bin/javac</executable>
                     <compilerArgs>
                         <arg>-XDignore.symbol.file</arg>
                     </compilerArgs>
